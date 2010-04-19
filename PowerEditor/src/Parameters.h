@@ -458,8 +458,7 @@ struct Lang
 class UserLangContainer
 {
 public :
-	UserLangContainer();
-	UserLangContainer(const TCHAR *name, const TCHAR *ext);
+	UserLangContainer(const TCHAR *name = TEXT("new user define"), const TCHAR *ext = TEXT("")) :
 
 	const UserLangContainer & operator=(const UserLangContainer & ulc);
 

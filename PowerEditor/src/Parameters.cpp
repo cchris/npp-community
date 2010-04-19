@@ -4956,22 +4956,6 @@ const char * NppParameters::getNativeLangMenuStringA( int itemID )
 	return NULL;
 }
 
-UserLangContainer::UserLangContainer():
-	_name(TEXT("new user define")),
-	_ext(TEXT("")),
-	_isCaseIgnored(false),
-	_isCommentLineSymbol(false),
-	_isCommentSymbol(false)
-{
-	for (int i = 0; i < nbPrefixListAllowed; i++)
-	{
-		_isPrefix[i] = false;
-	}
-
-	_escapeChar[0] = TEXT('\0');
-	_escapeChar[1] = TEXT('\0');
-}
-
 UserLangContainer::UserLangContainer( const TCHAR *name, const TCHAR *ext ) :
 	_name(name),
 	_ext(ext),
